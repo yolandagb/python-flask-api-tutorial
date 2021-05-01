@@ -18,9 +18,8 @@ def add_new_todo():
     request_body = request.data
     print("Incoming request with the following body", request_body)
     return 'Response for the POST todo'
-
-import json
-decoded_object = json.loads(original_string)
+    
+    decoded_object = json.loads(request.data)
 
 
 
